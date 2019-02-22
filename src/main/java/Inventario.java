@@ -11,21 +11,29 @@
  */
 public class Inventario {
     private String[] invetarioLibros;
-    private String[] vendidos;
-    private int idLibro;
+    private int vendidos;
+    
+    
     /**
      * En estas variables dos de tipo array de string y un entero:
      * @param invetarioLibros muestra la cantidad de libros que hay en el inventario, de forma general.
      * @param vendidos filtra en la cantidad que se han vendido, el que mas se ha vendido 
      * y el que menos lo ha hecho.
-     * @param idLibro variable que sera de mucha ayuda a la hora de la consultar o llamar el libro deseado
-     * por nomenclatura deseada.
+     * 
      */
 
-    public Inventario(String[] invetarioLibros, String[] vendidos, int idLibro) {
+    public Inventario(String[] invetarioLibros, int vendidos) {
         this.invetarioLibros = invetarioLibros;
         this.vendidos = vendidos;
-        this.idLibro = idLibro;
+        
+    }
+    
+    
+    public void insertarLibro() {
+        /**
+         * Este metodo sera utlizado para registrar los libros con
+         * su respectiva caracteristica en la base de datos.
+         */
     }
 
   
@@ -60,28 +68,15 @@ public class Inventario {
      */
     }
     
-    public void ventas(){
-        /**
-         * Este metodo ayuda en la facturacion del libro a la hora de la venta.
-         * Teniendo en cuenta que una facturacion puede contener n cantidad de libros.
-         * Tambien tomando como proceso la modificacion "automarica" del stock de los articulos vendidos.
-         */
-    
-    
-    }
-
+  
     public String[] getInvetarioLibros() {
         return invetarioLibros;
     }
 
-    public String[] getVendidos() {
+    public int getVendidos() {
         return vendidos;
     }
 
-    public int getIdLibro() {
-        return idLibro;
-    }
-    
-    
+   
     
 }

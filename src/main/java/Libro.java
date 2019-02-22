@@ -15,9 +15,11 @@ public class Libro {
      */
     protected int precio;
     private String nombreLibro;
-    private String nombreAutor;
+    private String nombreAutor;                                                     
     private String editorial;
     private int cantidad;
+    private String version;
+    
     /**
      * Estos son los parametros definidos al inicio de la clase Libro.
      * @param precio 
@@ -25,18 +27,19 @@ public class Libro {
      * @param nombreAutor
      * @param editorial
      * @param cantidad para identificar la cantidad de libros ingresados y/o existentes
+     * @param version 
      */
 
-    public Libro(int precio, String nombreLibro, String nombreAutor, String editorial, int cantidad) {
+   
+
+        
+    public Libro(int precio, String nombreLibro, String nombreAutor, String editorial, int cantidad, String version){
         this.precio = precio;
         this.nombreLibro = nombreLibro;
         this.nombreAutor = nombreAutor;
         this.editorial = editorial;
         this.cantidad = cantidad;
-    }
-
-    
-    public void insertarLibro(){
+        this.version = version;
         /**
          * Este metodo sera utlizado para registrar los libros con
          * su respectiva caracteristica en la base de datos.
@@ -44,6 +47,8 @@ public class Libro {
         
         
     }
+
+   
 
     public void setPrecio(int precio) {
         this.precio = precio;
@@ -64,6 +69,12 @@ public class Libro {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
+    
+    
     
     
 }
