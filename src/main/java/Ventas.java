@@ -11,7 +11,7 @@ import java.util.logging.Logger;
  * Consistiendo tambien para la alerta de cantidad en el stock
  *
  * @author Jhonny Rojas
- */
+ */ 
 public class Ventas {
     
     private String nombreCliente;
